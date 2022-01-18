@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Reminder</AssemblyName>
+    <RootNamespace>Reminder</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="baseline_delete_black_18dp.png" />
+    <None Remove="baseline_edit_black_18dp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="material\icons\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="baseline_delete_black_18dp.png" />
+    <Resource Include="baseline_edit_black_18dp.png" />
+  </ItemGroup>
+
+</Project>

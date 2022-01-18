@@ -1,0 +1,27 @@
+﻿<Window x:Class="Reminder.ListEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Reminder"
+        mc:Ignorable="d"
+        Title="ListEditor" Height="300" Width="400">
+    <Grid Background="#264653">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Content="List name:" Grid.Row="0" />
+        <TextBox x:Name="TextBoxListName" Grid.Row="1" Margin="5" />
+        <Label Content="Description:" Grid.Row="2" />
+        <TextBox Margin="5" x:Name="TextBoxDescription" Grid.Row="3" />
+        <Button x:Name="ButtonUpdateList"  Grid.Row="4" Margin="5" Background="#2a9d8f" Content="Save List" Click="ButtonUpdateList_Click" />
+    </Grid>
+</Window>
